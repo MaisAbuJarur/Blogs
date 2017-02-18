@@ -7,8 +7,6 @@
   },
   "scripts": {
     "postinstall": "npm install; bower install; npm install -g gulp karma karma-cli nodemon; npm install -g express",
-    "start": "gulp start",
-    "start:es6": "gulp start:es6",
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
