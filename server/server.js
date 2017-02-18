@@ -6,7 +6,7 @@ var app = express();
 var port = process.env.PORT || 8000;
 
 // connect to mongo database named "shortly"
-mongoose.connect('mongodb://localhost/shortly');
+mongoose.connect('mongodb://cozmo:hohoasadad@ds143449.mlab.com:43449/nodejsapp');
 
 // configure our server with all the middleware and routing
 require('./config/middleware.js')(app, express);
