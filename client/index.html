@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app='shortly'>
+  <head>
+    <meta charset="utf-8" />
+    <title>RBlogsK</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+  </head>
+  <body >
+   
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">RBlogsK</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#/client/app/blog/blogs.html"> Blog</a></li>
+    
+    </ul>
+  </div>
+</nav>
+
+    <div ng-view></div>
+   <script src="app/services/services.js"></script>
+        <script src="app/blog/blog.js"></script>
+        <script src="app/auth/auth.js"></script>
+
+
+    <script src="app/app.js"></script>
+  </body>
+</html>

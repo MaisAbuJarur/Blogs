@@ -1,0 +1,66 @@
+
+ <div ng-controller="BlogController" class="md-padding" ng-cloak class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="test">
+</div>
+
+   
+     <center>	 <input type='text' ng-model='search' class='search'placeholder='filter' style="background-color: grey; margin-top:2em; border-color: white;" /> </center>
+  
+     		<ul>
+
+
+     		 <form name='rbkForm' id='form' class = 'topBefore' ng-submit="addBlog()" novalidate>
+
+     		  <input id='email' name='bl' type="textarea"
+        ng-model="blogs.name"
+        value="{blogs.name}" 
+        placeholder="name" required
+        ng-class="{'error': shortlyForm.$invalid && shortlyForm.$dirty}"/>
+
+
+      <input id = 'email' name='bl' type="textarea"
+        ng-model="blogs.title"
+        value={blogs.}
+        placeholder="title" required
+        ng-class="{'error': shortlyForm.$invalid && shortlyForm.$dirty}"/>
+
+         <textarea id='message' name='bl' type="textarea"
+        ng-model="blogs.blog"
+        value={blogs.blog}
+        placeholder="Enter your blog here" required
+        ng-class="{'error': shortlyForm.$invalid && shortlyForm.$dirty}"> </textarea>
+        <br>
+
+      <button id='submit' type="submit" value="post" >
+        add
+      </button>
+    </form>
+
+
+
+        </ul>
+     	<br><br><br><br>
+     	<div class="blogs">
+	         <center>
+	         <div class="blog row" style="background-color: #99c2ff
+				;opacity:0.8;text-align:left;font-family:Futura,Trebuchet MS,Arial,sans-serif;line-height:380%;" 
+	            ng-repeat="blog in x | filter:search">
+		        <div class="col-lg-1 col-md-0 col-sm-0"></div>
+		      	<div class="col-lg-3 col-md-3 col-sm-6">
+		        	<img style='margin-top:2em' src="http://1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" class="profilePic img-circle"><br><br><br><br>
+		      	</div>
+		      	<div class="col-lg-1 col-md-0 col-sm-0"></div>
+		      	<div class="blogInfo col-lg-7 col-md-8 col-sm-6">
+		      		<h2>{{blog.name}}</h2>
+			        <h2>{{blog.title}}</h2>
+			        <h3>{{blog.blog}}</h3>
+			        <br>
+			        <hr>
+			        <br>
+		      	</div>
+    		</div>
+    		</center>
+    	</div>
+	</div>
+</div>
+
+
